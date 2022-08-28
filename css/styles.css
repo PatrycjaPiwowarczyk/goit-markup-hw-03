@@ -287,15 +287,39 @@ body {
   cursor: pointer;
 }
 
-.buttons:hover {
-  background: var(--hover-blue);
+.b1 {
+  width: 121px;
+  height: 38px;
+  background-color: #2196f3;
   color: var(--just-white);
   border-color: var(--hover-blue);
 }
 
+.b2 {
+  width: 93px;
+  height: 38px;
+}
+
+.b3 {
+  width: 114px;
+  height: 38px;
+}
+
+.b4 {
+  width: 91px;
+  height: 38px;
+}
+
+.b5 {
+  width: 121px;
+  height: 38px;
+}
+
+.buttons:hover {
+  border-color: var(--hover-blue);
+}
+
 .buttons:focus {
-  background: var(--hover-blue);
-  color: var(--just-white);
   border-color: var(--hover-blue);
 }
 
@@ -477,4 +501,43 @@ body {
 
 .additional-photo-description {
   margin-top: 10px;
+}
+
+.button-box {
+  display: flex;
+  width: 1600px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.buttons:first-child {
+  margin-left: 510px;
+}
+
+.buttons:last-child {
+  margin-right: 518px;
+}
+
+.buttons {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.image-list {
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 215px;
+  margin-top: 56px;
+  margin-bottom: 94px;
+}
+
+.image-description {
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.additional-image-description {
+  margin top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
