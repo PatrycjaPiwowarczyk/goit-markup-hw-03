@@ -8,35 +8,36 @@
     <link rel="stylesheet" href="https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297" />
     <link rel="stylesheet" href="https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016" />
     <link rel="stylesheet" href="https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />s
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div>
+    <div class="container">
       <header class="header">
-        <div class="container">
+        <div class="header-text">
           <a class="logo header-logo" href="./index.html"><span class="logo1">Web</span><span class="logo2">Studio</span></a>
           <nav>
-            <ul class="list">
+            <ul class="list nav">
               <li><a class="nav-text n1" href="./index.html">Agencja</a></li>
+              <li>
+                <a class="nav-text n2" href="./portfolio.html"><span class="current-page-nav">Portfolio</span></a>
+              </li>
+              <li class="nav-text n3">Kontakt</li>
+            </ul>
+          </nav>
+          <ul class="list ct">
             <li>
-              <a class="nav-text n2" href="./portfolio.html"><span class="current-page-nav">Portfolio</span></a>
+              <a class="contact-text c1" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="nav-text n3">Kontakt</li>
+            <li>
+              <a class="contact-text c2" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="list">
-          <li>
-            <a class="contact-text c1" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="contact-text c2" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
+        </div>
       </header>
-      <main class="portfolio-main">
+      <main class="portfolio-main section">
         <div class="button-box">
           <button class="buttons b1" type="button">Wszystkie</button>
           <button class="buttons b2" type="button">Strony</button>
@@ -44,8 +45,8 @@
           <button class="buttons b4" type="button">Dizajn</button>
           <button class="buttons b5" type="button">Marketing</button>
         </div>
-        <div>
-          <ul class="list image-list">
+        <ul class="list image-list">
+          <div class="image-box1">
             <li>
               <div class="images-section">
                 <img src="images/pic1.jpg" alt="Grafika prezentująca laptop z otwartą stroną internetową" width="370" height="294" />
@@ -67,6 +68,8 @@
                 <p class="additional-image-description">Aplikacja</p>
               </div>
             </li>
+          </div>
+          <div class="image-box2">
             <li>
               <div class="images-section">
                 <img src="images/pic4.jpg" alt="Grafika prezentująca słuchawki" width="370" height="294" />
@@ -88,6 +91,8 @@
                 <p class="additional-image-description">Strona internetowa</p>
               </div>
             </li>
+          </div>
+          <div class="image-box3">
             <li>
               <div class="images-section">
                 <img src="images/pic7.jpg" alt="Grafika prezentująca otwarte czasopismo" width="370" height="294" />
@@ -109,8 +114,8 @@
                 <p class="additional-image-description">Aplikacja</p>
               </div>
             </li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </main>
       <footer class="footer">
         <a class="logo footer-logo" href="./index.html"><span class="logo1">Web</span><span class="logo3">Studio</span></a>

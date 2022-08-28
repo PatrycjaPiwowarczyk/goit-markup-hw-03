@@ -9,15 +9,20 @@
   --background-gray: #e5e5e5;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-gray);
   font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--light-black);
-  display: flex;
-  justify-content: center;
-  height: 2349px;
 }
 
 .nav-text {
@@ -91,13 +96,11 @@ body {
 }
 
 .header {
-  width: 1600px;
   background-color: var(--just-white);
   border: 1px solid #eeeeee;
 }
 
 .footer {
-  width: 1600px;
   background: var(--just-gray);
 }
 
@@ -233,7 +236,6 @@ body {
 }
 
 .gray-section {
-  width: 1600px;
   background: var(--background-light-gray);
 }
 
@@ -350,65 +352,63 @@ body {
 
 .portfolio-main {
   background-color: var(--just-white);
-  width: 1600px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.container {
+  width: 1200px;;
 }
 
-.header .container {
-  width: 1600px;
-  height: 80px;
-  display: inline-flex;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-text {
+  display: flex; 
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-logo {
-  margin-left: 215px;
+  display: flex;
   margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .list {
-  display: inline-flex;
-  flex-direction: row;
-  margin-top: 32px;
+  display: flex;
 }
 
-.n1 {
+.n1{
   margin-left: 93px;
 }
 
-.n2,
-.n3 {
-  margin-left: 46px;
-}
+ .n1,
+ .n2{
+  margin-right: 46px
+ }
 
-.c1 {
-  margin-left: 364px;
-}
+ .n3{
+  margin-right: 371px;
+ }
 
-.c2 {
+ .c2{
   margin-left: 50px;
-}
+ }
 
+ 
 .footer {
-  width: 1600px;
-  height: 252px;
   display: flex;
   flex-direction: column;
 }
 
-.footer-logo {
+.footer-logo{
   margin-top: 60px;
-  margin-left: 215px;
 }
 
 .street {
   margin-top: 20px;
-  margin-left: 215px;
 }
 
 .footer-contact {
@@ -417,35 +417,41 @@ body {
 
 .f1,
 .f2 {
-  margin-left: 215px;
   margin-top: 9px;
 }
 
+.f2{
+  margin-bottom: 60px;
+}
+
 .dark-gray-section {
-  width: 1600px;
-  height: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
+.up-button-text{
+  margin-top: 106px;
+}
+
+.button1{
+  margin-bottom: 106px;
+}
+
 .main-section {
   background-color: var(--just-white);
-  width: 1600px;
-  height: 769px;
 }
 
 .text-section {
   display: flex;
-  margin-left: 215px;
 }
 
 .l1 {
-  margin-top: 94px;
-  margin-bottom: 94px;
   flex-wrap: wrap;
   column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-heading {
@@ -457,42 +463,38 @@ body {
   margin-bottom: 0;
 }
 
-.white-section {
-  width: 1170px;
-  height: 386px;
+.white-section{
+  justify-content: center;
 }
 
-.h2-heading {
-  margin-left: 624px;
+.h2-heading {    
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .l2 {
+  margin-left: auto;
+  margin-right: auto;
   width: 1170px;
-  margin-left: 215px;
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
 }
 
-.gray-section {
-  width: 1600px;
-  display: flex;
-}
-
 .gray-section-heading {
-  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
   white-space: nowrap;
-  margin-top: 94px;
-  margin-left: 695px;
+  margin-bottom: 50px;
 }
 
 .l3 {
-  margin-top: 186px;
-  margin-left: -690px;
+  width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo-description {
@@ -504,31 +506,32 @@ body {
 }
 
 .button-box {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  width: 1600px;
   flex-wrap: wrap;
   gap: 8px;
-}
-
-.buttons:first-child {
-  margin-left: 510px;
-}
-
-.buttons:last-child {
-  margin-right: 518px;
+  justify-content: center;
 }
 
 .buttons {
-  margin-top: 100px;
   flex-direction: column;
 }
 
 .image-list {
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 215px;
   margin-top: 56px;
-  margin-bottom: 94px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image-box1, .image-box2, .image-box3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .image-description {
