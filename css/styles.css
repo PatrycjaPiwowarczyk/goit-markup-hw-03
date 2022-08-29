@@ -540,6 +540,10 @@ body {
   text-align: center;
 }
 
+.buttons-text{
+  text-align: center;
+}
+
 .image-list {
   width: 1170px;
   margin-left: auto;
