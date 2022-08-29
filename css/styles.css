@@ -537,6 +537,7 @@ body {
 
 .buttons {
   flex-direction: column;
+  text-align: center;
 }
 
 .image-list {
