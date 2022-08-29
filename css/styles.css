@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: var(--background-gray);
+  /* background-color: var(--background-gray); */
   font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -95,14 +95,6 @@ body {
   text-decoration: none;
 }
 
-.header {
-  background-color: var(--just-white);
-  border: 1px solid #eeeeee;
-}
-
-.footer {
-  background: var(--just-gray);
-}
 
 .logo1 {
   color: var(--hover-blue);
@@ -146,10 +138,6 @@ body {
 
 .list {
   list-style-type: none;
-}
-
-.dark-gray-section {
-  background-color: var(--just-gray);
 }
 
 .up-button-text {
@@ -233,10 +221,6 @@ body {
 .services-images {
   width: 370px;
   height: 294px;
-}
-
-.gray-section {
-  background: var(--background-light-gray);
 }
 
 .gray-section-heading {
@@ -350,12 +334,52 @@ body {
   color: var(--light-gray);
 }
 
-.portfolio-main {
+.body-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--just-white);
+  border: 1px solid #eeeeee;
+}
+
+.background-dark-gray-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--just-gray);
+}
+
+.background-main-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--just-white);
+}
+
+.background-gray-section {
+  display: flex;
+  justify-content: center;
+  background: var(--background-light-gray);
+}
+
+.background-footer {
+  display: flex;
+  justify-content: center;
+  background: var(--just-gray);
+}
+
+.background-portfolio-main {
+  display: flex;
+  justify-content: center;
   background-color: var(--just-white);
 }
 
 .container {
-  width: 1200px;;
+  width: 1200px;
 }
 
 .section {
@@ -439,9 +463,6 @@ body {
   margin-bottom: 106px;
 }
 
-.main-section {
-  background-color: var(--just-white);
-}
 
 .text-section {
   display: flex;
@@ -487,10 +508,6 @@ body {
   margin-right: auto;
   white-space: nowrap;
   margin-bottom: 50px;
-}
-
-.gray-section {
-  margin-bottom: -94px;
 }
 
 .l3 {
@@ -542,4 +559,4 @@ body {
   margin top: 4px;
   margin-bottom: 20px;
   margin-left: 24px;
-}
+} 
