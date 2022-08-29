@@ -273,7 +273,7 @@ body {
   cursor: pointer;
 }
 
-.b1 {
+.buttons1 {
   width: 121px;
   height: 38px;
   background-color: #2196f3;
@@ -281,22 +281,22 @@ body {
   border-color: var(--hover-blue);
 }
 
-.b2 {
+.buttons2 {
   width: 93px;
   height: 38px;
 }
 
-.b3 {
+.buttons3 {
   width: 114px;
   height: 38px;
 }
 
-.b4 {
+.buttons4 {
   width: 91px;
   height: 38px;
 }
 
-.b5 {
+.buttons5 {
   width: 121px;
   height: 38px;
 }
@@ -391,35 +391,31 @@ body {
   display: flex; 
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .header-logo {
-  display: flex;
   margin-top: 24px;
   margin-bottom: 25px;
+  justify-content: flex-start;
 }
 
 .list {
   display: flex;
 }
 
-.n1{
-  margin-left: 93px;
-}
-
- .n1,
- .n2{
-  margin-right: 46px
+ .nav1,
+ .nav2{
+  margin-right: 46px;
  }
 
- .n3{
-  margin-right: 371px;
+ .nav3{
+  margin-right: 
  }
 
- .c2{
-  margin-left: 50px;
- }
+ .phone{
+  display: flex;
+  margin-left: 50px}
 
  
 .footer {
@@ -439,12 +435,12 @@ body {
   display: flex;
 }
 
-.f1,
-.f2 {
+.footer-mail,
+.footer-phone {
   margin-top: 9px;
 }
 
-.f2{
+.footer-phone {
   margin-bottom: 60px;
 }
 
