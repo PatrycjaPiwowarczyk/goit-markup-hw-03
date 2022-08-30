@@ -322,7 +322,7 @@ body {
   display: flex;
 }
 
-.l1 {
+.list1 {
   flex-wrap: wrap;
   column-gap: 30px;
   margin-left: auto;
@@ -362,7 +362,7 @@ body {
   justify-content: center;
 }
 
-.l2 {
+.list2 {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
@@ -425,7 +425,7 @@ body {
   margin-top: 10px;
 }
 
-.l3 {
+.list3 {
   width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
@@ -458,17 +458,13 @@ body {
   font-style: normal;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-}
-
-.buttons-text {
-  display: flex;
   justify-content: center;
 }
 
 .buttons1 {
   width: 121px;
   height: 38px;
-  background-color: #2196f3;
+  background-color: var(--hover-blue);
   color: var(--just-white);
   border-color: var(--hover-blue);
 }
